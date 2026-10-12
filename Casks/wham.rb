@@ -2,8 +2,8 @@
 # workflow (.github/workflows/release.yml), which fills in the version and the
 # zip's checksum.
 cask "wham" do
-  version "1.2.0"
-  sha256 "f51da002d00b981274d51885aafb80673899f85a3110884734bef7fd22bf4364"
+  version "1.2.1"
+  sha256 "170eece61e75e534d8f89021764a64aac86f47100d5e9613adcba3983464c1f2"
 
   url "https://github.com/gwendall/wham/releases/download/v#{version}/Wham.zip"
   name "Wham"
