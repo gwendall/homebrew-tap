@@ -2,8 +2,8 @@
 # workflow (.github/workflows/release.yml), which fills in the version and the
 # zip's checksum.
 cask "wham" do
-  version "1.0.0"
-  sha256 "a0323a425486f0eb9ae43b746cea9d96634b81e088471eda14bc2107a88c3ec6"
+  version "1.1.0"
+  sha256 "79d15e182c0d6a902aed338a28e726b45f06f61324557a9b592394a86b7bcc88"
 
   url "https://github.com/gwendall/wham/releases/download/v#{version}/Wham.zip"
   name "Wham"
@@ -15,6 +15,8 @@ cask "wham" do
     strategy :github_latest
   end
 
+  # Wham updates itself (Update Automatically in its menu).
+  auto_updates true
   depends_on :macos
 
   app "Wham.app"
