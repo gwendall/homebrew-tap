@@ -2,8 +2,8 @@
 # workflow (.github/workflows/release.yml), which fills in the version and the
 # zip's checksum.
 cask "wham" do
-  version "1.4.0"
-  sha256 "8393ae2b3d4a42d11c2c2b15150eccf060c4e0b9c1b57d25759aef0e4e14e245"
+  version "1.5.0"
+  sha256 "21afa589f333510c167fc9f48d8cafe3a97349706a83cd218c36cfc9797340c0"
 
   url "https://github.com/gwendall/wham/releases/download/v#{version}/Wham.zip"
   name "Wham"
@@ -29,6 +29,7 @@ cask "wham" do
   zap delete: "/private/etc/sudoers.d/wham",
       trash:  [
         "~/Library/LaunchAgents/sh.wham.app.plist",
+        "~/Library/Logs/Wham",
         "~/Library/Preferences/sh.wham.app.plist",
       ]
 
