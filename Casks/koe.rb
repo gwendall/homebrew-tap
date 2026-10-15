@@ -2,8 +2,8 @@
 # workflow (.github/workflows/release.yml), which fills in the version and the
 # zip's checksum.
 cask "koe" do
-  version "2.0.1"
-  sha256 "9a5fba0eca8983e82f5511dbf0e2894772bb77ad197b8db48bf2d4a52dc8ad87"
+  version "2.0.2"
+  sha256 "d419ca609d971221b14e85f80593956092a93ceac4d75864c94cd60c33b1d854"
 
   url "https://github.com/gwendall/koe-mac/releases/download/v#{version}/Koe.zip"
   name "Koe"
