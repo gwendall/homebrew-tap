@@ -3,7 +3,7 @@
 # zip's checksum.
 cask "koe" do
   version "2.2.2"
-  sha256 "139d1064c000bf3c6488367b619ff98c69c3efa0b4ae64e709fcae329fce3a33"
+  sha256 "a98a3deee90d8248feef75a2d67d2d0c0238e94ada083a5a9b71dfbf50160ed9"
 
   url "https://github.com/gwendall/koe-mac/releases/download/v#{version}/Koe.zip"
   name "Koe"
