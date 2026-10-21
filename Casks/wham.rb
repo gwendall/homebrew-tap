@@ -2,17 +2,18 @@
 # workflow (.github/workflows/release.yml), which fills in the version and the
 # zip's checksum.
 cask "wham" do
-  version "1.8.3"
-  sha256 "e169ef1122347d856a647fbe02c41c559c9377dccc73ee05e7f8bbcf929fd793"
+  version "1.8.4"
+  sha256 "47f7016f970d9008b42df11059bfa9a597690ea29771797a98564c93d3e14c6a"
 
-  url "https://github.com/gwendall/wham/releases/download/v#{version}/Wham.zip"
+  url "https://files.wham.sh/v#{version}/Wham.zip"
   name "Wham"
   desc "One-click menu bar switch to stay awake, even with the lid closed"
   homepage "https://wham.sh/"
 
+  # /latest is one line, the newest version.
   livecheck do
-    url :url
-    strategy :github_latest
+    url "https://files.wham.sh/latest"
+    regex(/^v?(\d+(?:\.\d+)+)$/)
   end
 
   # Wham updates itself (Update Automatically in its menu).
