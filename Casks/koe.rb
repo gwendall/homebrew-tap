@@ -2,17 +2,18 @@
 # workflow (.github/workflows/release.yml), which fills in the version and the
 # zip's checksum.
 cask "koe" do
-  version "2.2.9"
-  sha256 "9113f806daa507e4152d75aa15c96c1820c69743b9c43b0393684b5a37fabdd2"
+  version "2.2.10"
+  sha256 "946c786f4041d10d8c546d0410d54bde0ca0179bfb92a421d20317c08b40ca50"
 
-  url "https://github.com/gwendall/koe-mac/releases/download/v#{version}/Koe.zip"
+  url "https://files.koe.fm/v#{version}/Koe.zip"
   name "Koe"
   desc "Hold a key, talk, and the words land where you type, offline"
   homepage "https://koe.fm/"
 
+  # /latest is one line, the newest version.
   livecheck do
-    url :url
-    strategy :github_latest
+    url "https://files.koe.fm/latest"
+    regex(/^v?(\d+(?:\.\d+)+)$/)
   end
 
   # Koe updates itself (Update Automatically in its settings).
