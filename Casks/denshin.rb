@@ -7,10 +7,9 @@ cask "denshin" do
   version "0.0.16"
   sha256 "84d6ca1a60e6c9709244375a71dc8708ce2cc0ee22b59b873df7cb7912ef5d6c"
 
-  url "https://denshin-files.t3.tigrisfiles.io/v#{version}/Denshin.zip",
-      verified: "denshin-files.t3.tigrisfiles.io/"
+  url "https://denshin-files.t3.tigrisfiles.io/v#{version}/Denshin.zip"
   name "Denshin"
-  desc "Your agent sessions and accounts together, in one Mac app"
+  desc "Your agent sessions and accounts together, in one app"
   homepage "https://denshin.dev/"
 
   # /latest is one line, the newest version, written last by each release.
@@ -22,7 +21,7 @@ cask "denshin" do
   # Denshin updates itself (automatic updates are on unless turned off in Settings).
   auto_updates true
   depends_on arch: :arm64
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "Denshin.app"
 
