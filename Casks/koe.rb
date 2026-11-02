@@ -27,6 +27,8 @@ cask "koe" do
 
   zap trash: [
     "~/Library/Application Support/Koe",
+    "~/Library/Caches/fm.koe.mac",
+    "~/Library/HTTPStorages/fm.koe.mac",
     "~/Library/Preferences/fm.koe.mac.plist",
   ]
 
