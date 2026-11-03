@@ -4,8 +4,8 @@
 #
 #   brew install --cask gwendall/tap/denshin
 cask "denshin" do
-  version "0.0.17"
-  sha256 "8905e3d2142e25f1684f9b2d7db725c3a5c1ee6fee787d84d9e7b82f7e508763"
+  version "0.0.18"
+  sha256 "eb09e64c9aed6c9fe89407d9d14ce63b153b1978244a1b355652949d2c796395"
 
   url "https://denshin-files.t3.tigrisfiles.io/v#{version}/Denshin.zip"
   name "Denshin"
