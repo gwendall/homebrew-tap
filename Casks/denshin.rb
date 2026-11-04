@@ -4,17 +4,17 @@
 #
 #   brew install --cask gwendall/tap/denshin
 cask "denshin" do
-  version "0.0.18"
-  sha256 "eb09e64c9aed6c9fe89407d9d14ce63b153b1978244a1b355652949d2c796395"
+  version "0.0.19"
+  sha256 "d2c8fbf07560b0570e21269bc907af749e7f260816d9d11839d1c0fddf528e7c"
 
-  url "https://denshin-files.t3.tigrisfiles.io/v#{version}/Denshin.zip"
+  url "https://files.denshin.dev/v#{version}/Denshin.zip"
   name "Denshin"
   desc "Your agent sessions and accounts together, in one app"
   homepage "https://denshin.dev/"
 
   # /latest is one line, the newest version, written last by each release.
   livecheck do
-    url "https://denshin-files.t3.tigrisfiles.io/latest"
+    url "https://files.denshin.dev/latest"
     regex(/^v?(\d+(?:\.\d+)+)$/)
   end
 
