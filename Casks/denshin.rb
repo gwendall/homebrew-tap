@@ -4,8 +4,8 @@
 #
 #   brew install --cask gwendall/tap/denshin
 cask "denshin" do
-  version "0.0.23"
-  sha256 "7afe4a2a665ac426ddbe7b85c6829dabcb4c24397f80f44421686a9c036f9a4d"
+  version "0.0.24"
+  sha256 "830977d4ee8c03d114226c04c8d4fef2b6e9de35bafde43da7fdee2eecdcdab0"
 
   url "https://files.denshin.dev/v#{version}/Denshin.zip"
   name "Denshin"
